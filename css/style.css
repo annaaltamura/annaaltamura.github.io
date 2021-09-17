@@ -32,36 +32,58 @@ img {
 }
 a {
   color: #333333;
-  font-weight: 400;
-  text-decoration: underline;
-}
-a:hover {
-  color: #333333;
-  font-weight: 600;
-  text-decoration: underline;
+  background-color: transparent;
 }
 a:visited {
   color: #808080;
-  font-weight: 600;
-  text-decoration: underline;
+  background-color: transparent;
+}
+a:hover {
+  color: #CCCCCC;
+  background-color: transparent;
+}
+a:active {
+  color: #CCCCCC;
+  background-color: transparent;
 }
 .button {
   display: inline-block;
   background-color: #F0FA81;
   color: #333333;
-  font-weight: 400;
   padding: 10px;
-  transition: 0.2s opacity;
-}
-.button:hover {
-  opacity: 0.8;
   text-decoration: none;
 }
-.button.contact {
+.button:hover {
+    background-color: transparent;
+    color: #333333;
+    border: 2px solid #F0FA81;
+  text-decoration: none;
+  transition: 0.2s opacity;
+}
+.button.email {
   display: inline-block;
   background-color: #333333;
   color: #ffffff;
-  font-weight: 400;
   padding: 10px;
   transition: 0.2s opacity;
+}
+.button.email:hover {
+    background-color: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+  text-decoration: none;
+  transition: 0.2s opacity;
+}
+.logo-social{
+  max-width: 48px;
+}
+.logo{
+  max-width: 56px;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
