@@ -74,16 +74,81 @@ a:active {
   text-decoration: none;
   transition: 0.2s opacity;
 }
-.logo-social{
-  max-width: 48px;
-}
-.logo{
-  max-width: 56px;
-}
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero{
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1{
+  text-align: center;
+}
+
+.logo{
+  max-width: 56px;
+
+}
+
+.logo-social{
+  max-width: 48px;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 1px 4px #cccccc;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav > ul > li > a:visited {
+  color: #808080;
+}
+
+nav > ul > li > a:hover {
+  color: #F0FA81;
+}
+
+nav > ul > li > a:active {
+  color: #333333;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffffff;
+}
+
+main {
+  padding-top: 133px;
 }
