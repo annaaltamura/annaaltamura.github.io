@@ -2,7 +2,9 @@
 Primary - Black: #333333;
 Primary - Dark Gray: #808080;
 Primary - Gray: #CCCCCC;
-Secondary - Yellow: #F0FA81;*/
+Secondary - Yellow: #F0FA81;
+Secondary - Lilac: #7e88c9
+*/
 body {
   background-color: #ffffff;
   font-family: 'Epilogue', sans-serif;
@@ -20,13 +22,18 @@ h2 {
   font-weight: 400;
 }
 h3 {
-  font-size: 1.75em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
+p {
+  line-height: 1.6;
+}
+
 img {
   width: 100%;
 }
@@ -46,6 +53,16 @@ a:active {
   color: #CCCCCC;
   background-color: transparent;
 }
+
+.button-base{
+
+  background-color: #7e88c9;
+  color: #333333;
+  border-radius: 90px;
+padding:20px;
+  display: inline-block;
+}
+
 .button {
   display: inline-block;
   background-color: #F0FA81;
@@ -112,7 +129,7 @@ a:active {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #f7f6f5;
   text-align: center;
   padding: 22px 0;
   position: fixed;
@@ -134,7 +151,7 @@ nav > ul > li > a {
   padding: 0 14px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 nav > ul > li > a:visited {
@@ -158,10 +175,34 @@ nav > ul {
   margin: 32px 0px 0px 0px;
 }
 
-#hero {
-  background-color: #ffffff;
+#intro {
+  background-color: #f7f6f5;
 }
 
 main {
   padding-top: 180px;
+}
+/* -------END INTRO---------*/
+/* -------START WORKS---------*/
+
+#works-home h3 {
+  font-size: 1.3em;
+  padding-top: 24px;
+  margin:0;
+}
+
+.title {
+  font-size:3em;
+  margin:0;
+}
+
+.sub-title {
+  font-size: 1.3em;
+  margin:0;
+}
+
+#works-home p {
+  margin:0;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
