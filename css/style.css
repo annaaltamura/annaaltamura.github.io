@@ -34,6 +34,16 @@ h4 {
   font-weight: 400;
 }
 
+.title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 1.3em;
+  margin: 0;
+}
+
 p {
   line-height: 1.6;
 }
@@ -90,6 +100,17 @@ a:active {
 }
 
 .button-secondary {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 90px;
+  color: #333333;
+  border: 3px solid #7e88c9;
+  padding: 16px 32px 16px 32px;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button-secondary:visited {
   display: inline-block;
   background-color: transparent;
   border-radius: 90px;
@@ -219,7 +240,7 @@ main {
 }
 
 /* -------END INTRO---------*/
-/* -------START WORKS---------*/
+/* -------START WORKS-HOME ---------*/
 
 #works-home {
   padding-top: 24px;
@@ -231,23 +252,13 @@ main {
   margin: 0;
 }
 
-.title {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-.sub-title {
-  font-size: 1.3em;
-  margin: 0;
-}
-
 #works-home p {
   margin: 0;
   padding-top: 1em;
   padding-bottom: 2em;
 }
 
-/* -------END WORKS---------*/
+/* -------END WORKS-HOME ---------*/
 /* -------START FOOTER---------*/
 
 footer {
@@ -275,4 +286,12 @@ footer {
 }
 
 /* -------END FOOTER---------*/
-/* -------START AMOUNT---------*/
+/* -------START WORKS---------*/
+
+#works .title {
+    margin: 16px 0 0px 0;
+}
+
+#works .button-base {
+  margin-top: 16px;
+}
