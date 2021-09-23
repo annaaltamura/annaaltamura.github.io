@@ -13,18 +13,22 @@ body {
   line-height: 1.2;
   color: #333333;
 }
+
 h1 {
   font-size: 2em;
-    font-weight: 400;
+  font-weight: 400;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 400;
 }
+
 h3 {
   font-size: 1em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -37,30 +41,74 @@ p {
 img {
   width: 100%;
 }
+
 a {
   color: #333333;
   background-color: transparent;
 }
+
 a:visited {
   color: #808080;
   background-color: transparent;
 }
+
 a:hover {
   color: #CCCCCC;
   background-color: transparent;
 }
+
 a:active {
   color: #CCCCCC;
   background-color: transparent;
 }
 
-.button-base{
-
+.button-base {
   background-color: #7e88c9;
   color: #333333;
   border-radius: 90px;
-padding:20px;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
   display: inline-block;
+}
+
+.button-base:visited {
+  background-color: #7e88c9;
+  color: #333333;
+  border-radius: 90px;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-base:hover {
+  background-color: #333333;
+  color: #7e88c9;
+  border-radius: 90px;
+  padding: 16px 32px 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-secondary {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 90px;
+  color: #333333;
+  border: 3px solid #7e88c9;
+  padding: 16px 32px 16px 32px;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button-secondary:hover {
+  background-color: #333333;
+  color: #7e88c9;
+  border-radius: 90px;
+  padding: 19px 35px 19px 35px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+    text-decoration: none;
 }
 
 .button {
@@ -70,24 +118,11 @@ padding:20px;
   padding: 10px;
   text-decoration: none;
 }
+
 .button:hover {
-    background-color: transparent;
-    color: #333333;
-    border: 2px solid #F0FA81;
-  text-decoration: none;
-  transition: 0.2s opacity;
-}
-.button.email {
-  display: inline-block;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px;
-  transition: 0.2s opacity;
-}
-.button.email:hover {
-    background-color: transparent;
-    color: #333333;
-    border: 2px solid #333333;
+  background-color: transparent;
+  color: #333333;
+  border: 2px solid #F0FA81;
   text-decoration: none;
   transition: 0.2s opacity;
 }
@@ -96,35 +131,36 @@ padding:20px;
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 40px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#hero{
-  background-color: #ffe4c4;
+#hero {
+  background-color: #f7f6f5;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1{
+#hero h1 {
   font-size: 4em;
   letter-spacing: 0;
-  margin:0;
+  margin: 0;
 }
 
 #hero h2 {
   font-size: 1.3em;
   padding-top: 24px;
-  margin:0;
+  margin: 0;
 }
 
-.logo{
+.logo {
   max-width: 72px;
-
 }
 
-.logo-social{
+.logo-social {
   max-width: 48px;
 }
 
@@ -137,32 +173,31 @@ header {
   box-shadow: 1px 1px 4px #cccccc;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
-
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 14px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #333333;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   text-decoration: underline;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #333333;
 }
 
@@ -171,7 +206,7 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   margin: 32px 0px 0px 0px;
 }
 
@@ -180,29 +215,64 @@ nav > ul {
 }
 
 main {
-  padding-top: 180px;
+  padding-top: 170px;
 }
+
 /* -------END INTRO---------*/
 /* -------START WORKS---------*/
+
+#works-home {
+  padding-top: 24px;
+}
 
 #works-home h3 {
   font-size: 1.3em;
   padding-top: 24px;
-  margin:0;
+  margin: 0;
 }
 
 .title {
-  font-size:3em;
-  margin:0;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 .sub-title {
   font-size: 1.3em;
-  margin:0;
+  margin: 0;
 }
 
 #works-home p {
-  margin:0;
+  margin: 0;
   padding-top: 1em;
   padding-bottom: 2em;
 }
+
+/* -------END WORKS---------*/
+/* -------START FOOTER---------*/
+
+footer {
+  padding: 1em 0 1em 0;
+  background-color: #f7f6f5;
+}
+
+.social>ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  padding: 2em 0 2em 0;
+}
+
+.social>ul>li {
+  display: inline-block;
+  padding: 0 12px 0 0;
+}
+
+.copyright>p {
+  font-size: 0.75em;
+  color: #cccccc;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+/* -------END FOOTER---------*/
+/* -------START AMOUNT---------*/
