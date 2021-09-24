@@ -74,6 +74,7 @@ a:active {
 
 .button-base {
   background-color: #7e88c9;
+  text-align: center;
   color: #333333;
   border-radius: 90px;
   padding: 16px 32px 16px 32px;
@@ -101,6 +102,7 @@ a:active {
 
 .button-secondary {
   display: inline-block;
+  text-align: center;
   background-color: transparent;
   border-radius: 90px;
   color: #333333;
@@ -129,23 +131,7 @@ a:active {
   text-decoration: none;
   display: inline-block;
   border: none;
-    text-decoration: none;
-}
-
-.button {
-  display: inline-block;
-  background-color: #F0FA81;
-  color: #333333;
-  padding: 10px;
   text-decoration: none;
-}
-
-.button:hover {
-  background-color: transparent;
-  color: #333333;
-  border: 2px solid #F0FA81;
-  text-decoration: none;
-  transition: 0.2s opacity;
 }
 
 /* Layout styling */
@@ -241,7 +227,6 @@ main {
 
 /* -------END INTRO---------*/
 /* -------START WORKS-HOME ---------*/
-
 #works-home {
   padding-top: 24px;
 }
@@ -260,7 +245,6 @@ main {
 
 /* -------END WORKS-HOME ---------*/
 /* -------START FOOTER---------*/
-
 footer {
   padding: 1em 0 1em 0;
   background-color: #f7f6f5;
@@ -287,11 +271,79 @@ footer {
 
 /* -------END FOOTER---------*/
 /* -------START WORKS---------*/
-
 #works .title {
-    margin: 16px 0 0px 0;
+  margin: 16px 0 0px 0;
 }
 
 #works .button-base {
   margin-top: 16px;
 }
+
+/* -------END WORKS---------*/
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+#hero {
+  padding-top:40px;
+  padding-bottom: 32px;
+  text-align: center
+}
+
+#hero h3 {
+  text-align: center
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#works-home .button-secondary {
+margin-left: 35%;
+margin-right: 35%;
+display:block;
+}
+
+/*---------END HOME 640PX-----------*/
+/*---------START ABOUT 640PX-----------*/
+
+#about-page h3 {
+  margin:0;
+}
+
+
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
