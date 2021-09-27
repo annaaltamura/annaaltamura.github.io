@@ -80,6 +80,7 @@ a:active {
   padding: 16px 32px 16px 32px;
   text-decoration: none;
   display: inline-block;
+  transition-duration: 0.6s;
 }
 
 .button-base:visited {
@@ -101,35 +102,41 @@ a:active {
 }
 
 .button-secondary {
-  display: inline-block;
+  display: block;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: transparent;
   border-radius: 90px;
   color: #333333;
   border: 3px solid #7e88c9;
   padding: 16px 32px 16px 32px;
-  transition: 0.2s opacity;
   text-decoration: none;
+  transition-duration: 0.6s;
 }
 
 .button-secondary:visited {
-  display: inline-block;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: transparent;
   border-radius: 90px;
   color: #333333;
   border: 3px solid #7e88c9;
   padding: 16px 32px 16px 32px;
-  transition: 0.2s opacity;
   text-decoration: none;
 }
 
 .button-secondary:hover {
+  display: block;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #333333;
   color: #7e88c9;
   border-radius: 90px;
   padding: 19px 35px 19px 35px;
-  text-decoration: none;
-  display: inline-block;
   border: none;
   text-decoration: none;
 }
@@ -243,6 +250,48 @@ main {
   padding-bottom: 2em;
 }
 
+/*--------------------------------------------START SVG ANIMATION*/
+
+picture svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*--------------------------------------------END SVG ANIMATION*/
+
 /* -------END WORKS-HOME ---------*/
 /* -------START FOOTER---------*/
 footer {
@@ -284,7 +333,6 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
   }
@@ -298,50 +346,57 @@ Medium devices (640px and larger)
     padding-top: 120px;
   }
 
-#hero {
-  padding-top:40px;
-  padding-bottom: 32px;
-  text-align: center
+  #hero {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    text-align: center
+  }
+
+  #hero h3 {
+    text-align: center
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*---------END HOME 640PX-----------*/
+  /*---------START ABOUT 640PX-----------*/
+  #about-page h3 {
+    margin: 0;
+  }
 }
 
-#hero h3 {
-  text-align: center
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#works-home .button-secondary {
-margin-left: 35%;
-margin-right: 35%;
-display:block;
-}
-
-/*---------END HOME 640PX-----------*/
-/*---------START ABOUT 640PX-----------*/
-
-#about-page h3 {
-  margin:0;
-}
-
-
-
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    float: right;
+  }
+
+  [class*="col-"] p {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
