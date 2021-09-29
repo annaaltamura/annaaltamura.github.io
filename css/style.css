@@ -377,6 +377,10 @@ Medium devices (640px and larger)
   #about h3 {
     margin-top: 0;
   }
+
+  #home{
+    padding-top: 100px;
+  }
 }
 
 /*---------END about 640PX-----------*/
@@ -392,10 +396,6 @@ Large devices (1024px or larger)
 
   #home{
     padding-top: 100px;
-  }
-
-  #hero {
-    padding: 132px 0;
   }
 
   #hero h1 {
