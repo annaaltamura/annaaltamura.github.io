@@ -5,6 +5,10 @@ Primary - Gray: #CCCCCC;
 Secondary - Yellow: #F0FA81;
 Secondary - Lilac: #7e88c9
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Epilogue', sans-serif;
@@ -20,12 +24,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -37,6 +41,7 @@ h4 {
 .title {
   font-size: 2.5em;
   margin: 24px 0;
+  font-weight: 400;
 }
 
 .title span {
@@ -105,7 +110,6 @@ a:active {
 
 .button-secondary {
   display: block;
-  width: 180px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -257,64 +261,6 @@ main {
   padding-bottom: 1em;
 }
 
-/*--------------------------------------------START SVG ANIMATION*/
-picture svg {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/*--------------------------------------------END SVG ANIMATION*/
 /* -------END WORKS-HOME ---------*/
 /* -------START FOOTER---------*/
 footer {
@@ -343,16 +289,12 @@ footer {
 
 /* -------END FOOTER---------*/
 /* -------START WORKS---------*/
-#works .title {
-  margin: 16px 0 0px 0;
-}
-
 #works .button-base {
   margin-top: 16px;
 }
 
-#works .row {
-  padding: 24px 0 40px 0;
+#works h3 {
+  margin-top: 0;
 }
 
 /* -------END WORKS---------*/
@@ -390,16 +332,11 @@ Medium devices (640px and larger)
   }
 
   #works-home h3 {
-    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 0;
-  }
-
-  .margin-left-right {
-    padding-left: 32px;
-    padding-right: 32px;
+    /*padding: 40px 0;*/
+    margin-top: 0;
   }
 
   .col-md-6 {
@@ -408,6 +345,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
+    /*  padding-left: 32px;*/
   }
 
   .row:after {
@@ -416,19 +354,52 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  .button-secondary {
+    display: inline-block;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
   /*---------END HOME 640PX-----------*/
   /*---------START ABOUT 640PX-----------*/
-  #about-page h3 {
-    margin: 0;
+  .padding-left {
+    padding-left: 32px;
+  }
+
+  #about h2 {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  #about h3 {
+    margin-top: 0;
   }
 }
 
+/*---------END about 640PX-----------*/
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home{
+    padding-top: 100px;
+  }
+
   #hero {
     padding: 132px 0;
+  }
+
+  #hero h1 {
+    font-size: 4em;
   }
 
   .col-lg-7 {
@@ -441,9 +412,17 @@ Large devices (1024px or larger)
     float: right;
   }
 
-  [class*="col-"] p {
-    max-width: 1200px;
+  p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.8;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #amount h3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
   }
 }
