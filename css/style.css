@@ -109,7 +109,7 @@ a:active {
 }
 
 .button-secondary {
-  display: inline-block;
+width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -123,8 +123,7 @@ a:active {
 }
 
 .button-secondary:visited {
-  display: inline-block;
-  margin-left: auto;
+    margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-color: transparent;
