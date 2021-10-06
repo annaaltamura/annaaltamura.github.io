@@ -202,13 +202,14 @@ transform: rotate(20deg);
 }
 
 header {
-  background-color: #f7f6f5;
+  background: linear-gradient(#f3f3f3,rgba(255,255,255,0));
   text-align: center;
   padding: 12px 0;
   position: fixed;
   width: 100%;
-  box-shadow: 1px 1px 4px #cccccc;
+  /*box-shadow: 1px 1px 4px #cccccc;*/
 }
+
 
 nav {
   display: inline-block;
@@ -229,7 +230,7 @@ nav>ul>li>a {
   padding: 0 14px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 nav>ul>li>a:visited {
@@ -269,6 +270,15 @@ main {
 footer {
   padding: 1em 0 1em 0;
   background-color: #f7f6f5;
+  text-align: center;
+}
+
+footer .button-secondary {
+  margin-top: 24px;
+}
+
+footer p{
+  margin-bottom: 32px;
 }
 
 .social>ul {
@@ -286,7 +296,7 @@ footer {
 .copyright>p {
   font-size: 0.75em;
   color: #cccccc;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* -------END FOOTER---------*/
@@ -301,13 +311,50 @@ footer {
 
 /* -------END WORKS---------*/
 /*--------AMOUNT START------*/
-#hero-amount .container {
+#hero-project .container {
   margin-top: 40px;
 }
 
-#amount h3 {
+#project h3 {
   font-weight: 500;
 }
+
+.quote-center {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#project .quote {
+  font-size: 1em;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+
+}
+
+#project [class*="col-"] {
+    width: 100%;
+  /*  padding-left: 32px;*/
+}
+
+#project h1 {
+font-weight: 500;
+margin-top:16px;
+font-size: 3em;
+}
+
+.padding-right {
+  padding-bottom:16px;
+}
+
+#project .padding-left {
+  padding-top:0px;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -359,9 +406,6 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  footer {
-    text-align: center;
-  }
 
   /*---------END HOME 640PX-----------*/
   /*---------START ABOUT 640PX-----------*/
@@ -385,7 +429,64 @@ Medium devices (640px and larger)
 
 /*---------END about 640PX-----------*/
 
+/*---------START AMOUNT project 640PX-----------------------*/
 
+#hero-project .container {
+  margin-top: 40px;
+}
+
+#project h3 {
+  font-weight: 500;
+}
+
+.quote-center {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#project   [class*="col-"] {
+    text-align: left;
+    /*  padding-left: 32px;*/
+  }
+
+#project .col-md-6 {
+    width: 50%;
+  }
+
+  #project .col-md-3 {
+    width: 30%;
+  }
+
+  #project .col-md-8 {
+    width: 70%;
+  }
+
+  .padding-right {
+    padding-right:16px;
+  }
+
+  #project .padding-left {
+    padding-left:16px;
+  }
+
+#project .quote {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+
+}
+
+#project h1 {
+font-weight: 500;
+margin-top:16px;
+font-size: 3em;
+}
 
 }
 
