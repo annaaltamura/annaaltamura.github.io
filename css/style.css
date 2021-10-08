@@ -5,6 +5,10 @@ Primary - Gray: #CCCCCC;
 Secondary - Yellow: #F0FA81;
 Secondary - Lilac: #7e88c9
 */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -65,7 +69,7 @@ a {
 }
 
 a:visited {
-  color: #808080;
+  color: #333333;
   background-color: transparent;
 }
 
@@ -133,7 +137,6 @@ a:active {
   padding: 16px 32px 16px 32px;
   text-decoration: none;
   transition-duration: 0.6s;
-  text-decoration: none;
 }
 
 .button-secondary:hover {
@@ -184,9 +187,6 @@ a:active {
   animation: 2s logo-rotate infinite alternate linear;
 }
 
-/*.logo:hover{
-transform: rotate(20deg);
-}*/
 @keyframes logo-rotate {
   from {
     transform: rotate(20deg);
@@ -202,38 +202,54 @@ transform: rotate(20deg);
 }
 
 header {
-  background: linear-gradient(#f3f3f3, rgba(255, 255, 255, 0));
-  text-align: center;
-  padding: 12px 0;
+  /*  background-color: red;*/
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7402311266303396) 25%, rgba(255,255,255,0.9587185215883228) 69%);
   position: fixed;
   width: 100%;
-  /*box-shadow: 1px 1px 4px #cccccc;*/
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
+  padding: 12px 0;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 24px 0px 0px 0px
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
-  padding: 0 14px;
-  text-transform: uppercase;
+
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 6px 0 6px 0;
+  text-align: right;
+  font-size: 24px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  font-size: 20px;
+  padding-right: 0;
+  color: #333333;
+  background-color: transparent;
 }
 
 nav>ul>li>a:visited {
   color: #333333;
+  background-color: transparent;
 }
 
 nav>ul>li>a:hover {
@@ -242,10 +258,11 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a:active {
   color: #333333;
+  background-color: transparent;
 }
 
 main {
-  padding-top: 140px;
+  padding-top: 90px;
 }
 
 /* -------END INTRO---------*/
@@ -363,6 +380,23 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+    padding: 0 0 10px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   main {
