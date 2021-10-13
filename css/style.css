@@ -84,69 +84,53 @@ a:active {
 }
 
 .button-base {
-  background-color: #7e88c9;
-  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Cormorant Upright', serif;
+  text-align: left;
   color: #333333;
-  border-radius: 90px;
-  padding: 16px 32px 16px 32px;
-  text-decoration: none;
+  padding: 16px 0;
+  text-decoration: underline;
   display: inline-block;
   transition-duration: 0.6s;
 }
 
 .button-base:visited {
-  background-color: #7e88c9;
   color: #333333;
-  border-radius: 90px;
-  padding: 16px 32px 16px 32px;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .button-base:hover {
-  background-color: #333333;
-  color: #7e88c9;
-  border-radius: 90px;
-  padding: 16px 32px 16px 32px;
-  text-decoration: none;
-  display: inline-block;
+  color: #808080;
+  padding-left: 16px;
 }
 
 .button-secondary {
   width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 0;
+  font-family: 'Cormorant Upright', serif;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 90px;
-  color: #333333;
-  border: 3px solid #7e88c9;
-  padding: 16px 32px 16px 32px;
   text-decoration: none;
+  background-color: #333333;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  border-radius: 90px;
   transition-duration: 0.6s;
 }
 
 .button-secondary:visited {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 90px;
-  color: #333333;
-  border: 3px solid #7e88c9;
-  padding: 16px 32px 16px 32px;
-  text-decoration: none;
-  transition-duration: 0.6s;
+  color: white;
+  background-color: #333333;
 }
 
 .button-secondary:hover {
-  text-align: center;
-  background-color: #333333;
-  border-radius: 90px;
-  color: white;
-  padding: 16px 32px 16px 32px;
-  text-decoration: none;
-  transition-duration: 0.6s;
+color: white;
+opacity: 70%;
+text-decoration: underline;
+transition-duration: 0.6s;
+background-color: #333333;
 }
 
 /* Layout styling */
@@ -157,29 +141,6 @@ a:active {
 .row {
   margin: 40px 0;
   /* 25px top and bottom, 0 left and right */
-}
-
-#hero {
-  background-color: #f7f6f5;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero h1 {
-  font-size: 2em;
-}
-
-#hero h1 span {
-  font-size: 50%;
-  display: block;
-  margin-top: 1em;
-}
-
-#hero h2 {
-  font-size: 1.3em;
-  padding-top: 24px;
-  margin: 0;
 }
 
 .logo {
@@ -203,8 +164,8 @@ a:active {
 
 header {
   /*  background-color: red;*/
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7794468129048494) 47%, rgba(255,255,255,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7794468129048494) 47%, rgba(255, 255, 255, 1) 100%);
   position: fixed;
   width: 100%;
   padding: 12px 0;
@@ -217,7 +178,6 @@ nav>ul {
 }
 
 nav>ul>li>a {
-
   text-decoration: none;
   font-weight: 500;
 }
@@ -265,6 +225,44 @@ main {
   padding-top: 90px;
 }
 
+/*-----------------START HERO---------------------*/
+#hero {
+  background-color: white;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  font-size: 11vw;
+  margin: 0 0 16px 0;
+}
+
+#hero h2 {
+  font-weight: 400;
+  font-size: 64px;
+  font-family: 'Cormorant Upright', serif;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  margin-top: 24px;
+  text-align: left;
+  float: left;
+  padding: 0 0 0 15px;
+}
+
+#hero span {
+  text-align: right;
+  float: right;
+  padding: 0 30px 0 0;
+}
+
+#hero .row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* --------------------END HERO--------------------*/
 /* -------END INTRO---------*/
 /* -------START WORKS-HOME ---------*/
 #works-home {
@@ -405,16 +403,40 @@ Medium devices (640px and larger)
     padding-top: 120px;
   }
 
+/*-------------------HERO +640PX-------------------*/
+
+
   #hero {
     padding-top: 40px;
     padding-bottom: 32px;
-    background-color: #f7f6f5;
-    text-align: center
   }
 
-  #hero h3 {
-    text-align: center
+  #hero h1 {
+    font-size: 32px;
+    margin: 0 0 16px 0;
   }
+
+  #hero h2 {
+    font-weight: 400;
+    font-size: 64px;
+    font-family: 'Cormorant Upright', serif;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin-top: 24px;
+    text-align: left;
+    float: left;
+    padding: 0 0 0 15px;
+  }
+
+  #hero span {
+    text-align: right;
+    float: right;
+    padding: 16px 30px 0 0;
+    line-height: 0.8;
+  }
+
+  /*----------------------END HERO +640PX----------------------------*/
 
   #works-home h3 {
     display: block;
@@ -437,6 +459,7 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
 
   /*---------END HOME 640PX-----------*/
   /*---------START ABOUT 640PX-----------*/
@@ -529,9 +552,25 @@ Large devices (1024px or larger)
     padding-top: 100px;
   }
 
+  /*----------------------START HERO +1024-------------*/
+
   #hero h1 {
-    font-size: 4em;
+    font-size: 48px;
+    line-height: 1.4;
   }
+
+  #hero h2 {
+    font-size: 100px;
+  }
+
+  #hero span {
+    padding: 40px 200px 0 0;
+    line-height: 0.8;
+  }
+
+
+
+  /*----------------------END HERO +1024-------------*/
 
   .col-lg-7 {
     width: 60%;
