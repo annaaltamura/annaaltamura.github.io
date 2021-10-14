@@ -1,25 +1,22 @@
-/*Colors used:
+/* Colors used:
 Primary - Black: #333333;
 Primary - Dark Gray: #808080;
 Primary - Gray: #CCCCCC;
 Secondary - Yellow: #F0FA81;
 Secondary - Lilac: #7e88c9
 */
-html {
-  scroll-behavior: smooth;
-}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: white;
   font-family: 'Epilogue', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-  color: #333333;
+  color: #333;
 }
 
 h1 {
@@ -63,23 +60,23 @@ img {
 }
 
 a {
-  color: #333333;
+  color: #333;
   background-color: transparent;
   transition-duration: 0.6s;
 }
 
 a:visited {
-  color: #333333;
+  color: #333;
   background-color: transparent;
 }
 
 a:hover {
-  color: #CCCCCC;
+  color: #ccc;
   background-color: transparent;
 }
 
 a:active {
-  color: #CCCCCC;
+  color: #ccc;
   background-color: transparent;
 }
 
@@ -88,49 +85,50 @@ a:active {
   font-weight: 500;
   font-family: 'Cormorant Upright', serif;
   text-align: left;
-  color: #333333;
-  padding: 16px 0;
-  text-decoration: underline;
+  color: #333;
+  padding: 16px 24px;
+  text-decoration: none;
   display: inline-block;
   transition-duration: 0.6s;
+  border-radius: 90px;
+  border: 3px solid #333;
 }
 
 .button-base:visited {
-  color: #333333;
+  color: #333;
 }
 
 .button-base:hover {
   color: #808080;
-  padding-left: 16px;
+  padding-left: 32px;
+  border: 3px solid #808080;
 }
 
 .button-secondary {
   width: 100%;
   font-size: 24px;
   font-weight: 500;
-  padding: 16px 0;
   font-family: 'Cormorant Upright', serif;
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
-  background-color: #333333;
+  background-color: #333;
   color: white;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 24px;
   border-radius: 90px;
   transition-duration: 0.6s;
 }
 
 .button-secondary:visited {
   color: white;
-  background-color: #333333;
+  background-color: #333;
 }
 
 .button-secondary:hover {
-color: white;
-opacity: 70%;
-text-decoration: underline;
-transition-duration: 0.6s;
-background-color: #333333;
+  color: white;
+  transition-duration: 0.6s;
+  background-color: #808080;
+  padding-left: 32px;
 }
 
 /* Layout styling */
@@ -140,7 +138,6 @@ background-color: #333333;
 
 .row {
   margin: 40px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
@@ -163,33 +160,32 @@ background-color: #333333;
 }
 
 header {
-  /*  background-color: red;*/
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7794468129048494) 47%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6393907904958859) 17%, rgba(255, 255, 255, 1) 67%);
   position: fixed;
   width: 100%;
   padding: 12px 0;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   text-decoration: none;
   font-weight: 500;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
-  padding: 6px 0 6px 0;
+  padding: 6px 0;
   text-align: right;
   font-size: 24px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -203,21 +199,21 @@ nav>ul>li>a {
   top: 26px;
   font-size: 20px;
   padding-right: 0;
-  color: #333333;
+  color: #333;
   background-color: transparent;
 }
 
-nav>ul>li>a:visited {
-  color: #333333;
+nav > ul > li > a:visited {
+  color: #333;
   background-color: transparent;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-nav>ul>li>a:active {
-  color: #333333;
+nav > ul > li > a:active {
+  color: #333;
   background-color: transparent;
 }
 
@@ -225,7 +221,7 @@ main {
   padding-top: 90px;
 }
 
-/*-----------------START HERO---------------------*/
+/* -----------------START HERO--------------------- */
 #hero {
   background-color: white;
   padding: 20px 0;
@@ -235,7 +231,7 @@ main {
 
 #hero h1 {
   font-size: 11vw;
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
 }
 
 #hero h2 {
@@ -258,13 +254,15 @@ main {
 }
 
 #hero .row {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* --------------------END HERO--------------------*/
-/* -------END INTRO---------*/
-/* -------START WORKS-HOME ---------*/
+/* --------------------END HERO-------------------- */
+
+/* -------END INTRO--------- */
+
+/* -------START WORKS-HOME --------- */
 #works-home {
   padding-top: 24px;
 }
@@ -279,10 +277,11 @@ main {
   display: inline-block;
 }
 
-/* -------END WORKS-HOME ---------*/
-/* -------START FOOTER---------*/
+/* -------END WORKS-HOME --------- */
+
+/* -------START FOOTER--------- */
 footer {
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
   background-color: #f7f6f5;
   text-align: center;
 }
@@ -295,26 +294,26 @@ footer p {
   margin-bottom: 32px;
 }
 
-.social>ul {
+.social > ul {
   list-style-type: none;
-  padding: 0;
   width: 100%;
-  padding: 2em 0 2em 0;
+  padding: 2em 0;
 }
 
-.social>ul>li {
+.social > ul > li {
   display: inline-block;
   padding: 0 12px 0 0;
 }
 
-.copyright>p {
+.copyright > p {
   font-size: 0.75em;
-  color: #cccccc;
+  color: #ccc;
   margin-bottom: 12px;
 }
 
-/* -------END FOOTER---------*/
-/* -------START WORKS---------*/
+/* -------END FOOTER--------- */
+
+/* -------START WORKS--------- */
 #works .button-base {
   margin-top: 16px;
 }
@@ -323,8 +322,10 @@ footer p {
   margin-top: 0;
 }
 
-/* -------END WORKS---------*/
-/*--------AMOUNT START------*/
+/* -------END WORKS--------- */
+
+/* --------AMOUNT START------ */
+
 #hero-project .container {
   margin-top: 40px;
 }
@@ -350,7 +351,6 @@ footer p {
 
 #project [class*="col-"] {
   width: 100%;
-  /*  padding-left: 32px;*/
 }
 
 #project h1 {
@@ -364,7 +364,7 @@ footer p {
 }
 
 #project .padding-left {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 /* ==============================
@@ -380,7 +380,7 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -395,7 +395,7 @@ Medium devices (640px and larger)
     padding: 0 0 10px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -403,9 +403,7 @@ Medium devices (640px and larger)
     padding-top: 120px;
   }
 
-/*-------------------HERO +640PX-------------------*/
-
-
+  /* -------------------HERO +640PX------------------- */
   #hero {
     padding-top: 40px;
     padding-bottom: 32px;
@@ -413,7 +411,7 @@ Medium devices (640px and larger)
 
   #hero h1 {
     font-size: 32px;
-    margin: 0 0 16px 0;
+    margin: 0 0 16px;
   }
 
   #hero h2 {
@@ -436,8 +434,7 @@ Medium devices (640px and larger)
     line-height: 0.8;
   }
 
-  /*----------------------END HERO +640PX----------------------------*/
-
+  /* ----------------------END HERO +640PX---------------------------- */
   #works-home h3 {
     display: block;
     margin-left: auto;
@@ -451,18 +448,17 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    /*  padding-left: 32px;*/
   }
 
-  .row:after {
+  .row::after {
     content: "";
     clear: both;
     display: table;
   }
 
+  /* ---------END HOME 640PX----------- */
 
-  /*---------END HOME 640PX-----------*/
-  /*---------START ABOUT 640PX-----------*/
+  /* ---------START ABOUT 640PX----------- */
   .padding-left {
     padding-left: 32px;
   }
@@ -480,8 +476,9 @@ Medium devices (640px and larger)
     padding-top: 100px;
   }
 
-  /*---------END about 640PX-----------*/
-  /*---------START AMOUNT project 640PX-----------------------*/
+  /* ---------END about 640PX----------- */
+
+  /* ---------START AMOUNT project 640PX----------------------- */
   #hero-project .container {
     margin-top: 40px;
   }
@@ -498,7 +495,6 @@ Medium devices (640px and larger)
 
   #project [class*="col-"] {
     text-align: left;
-    /*  padding-left: 32px;*/
   }
 
   #project .col-md-6 {
@@ -552,8 +548,7 @@ Large devices (1024px or larger)
     padding-top: 100px;
   }
 
-  /*----------------------START HERO +1024-------------*/
-
+  /* ----------------------START HERO +1024------------- */
   #hero h1 {
     font-size: 48px;
     line-height: 1.4;
@@ -568,10 +563,7 @@ Large devices (1024px or larger)
     line-height: 0.8;
   }
 
-
-
-  /*----------------------END HERO +1024-------------*/
-
+  /* ----------------------END HERO +1024------------- */
   .col-lg-7 {
     width: 60%;
     float: left;
@@ -590,7 +582,7 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  /*---------START AMOUNT 1200PX-----------*/
+  /* ---------START AMOUNT 1200PX----------- */
   #amount h3 {
     display: inline-block;
     margin-left: auto;
