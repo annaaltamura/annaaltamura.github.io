@@ -240,14 +240,13 @@ main {
   display: block;
   margin-top: 24px;
   text-align: left;
-  float: left;
   padding: 0 0 0 15px;
 }
 
 #hero span {
   text-align: right;
   float: right;
-  padding: 0 30px 0 0;
+  padding: 3vh 30px 0 0;
 }
 
 #hero .row {
@@ -288,18 +287,18 @@ footer p {
   margin-bottom: 32px;
 }
 
-.social > ul {
+.social>ul {
   list-style-type: none;
   width: 100%;
   padding: 2em 0;
 }
 
-.social > ul > li {
+.social>ul>li {
   display: inline-block;
   padding: 0 12px 0 0;
 }
 
-.copyright > p {
+.copyright>p {
   font-size: 0.75em;
   color: #ccc;
   margin-bottom: 12px;
@@ -316,7 +315,6 @@ footer p {
 }
 
 /* -------END WORKS--------- */
-
 /* --------AMOUNT START------ */
 #hero-project .container {
   margin-top: 40px;
@@ -372,7 +370,7 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -387,7 +385,7 @@ Medium devices (640px and larger)
     padding: 0 0 10px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -449,7 +447,6 @@ Medium devices (640px and larger)
   }
 
   /* ---------END HOME 640PX----------- */
-
   /* ---------START ABOUT 640PX----------- */
   .padding-left {
     padding-left: 32px;
@@ -475,7 +472,6 @@ Medium devices (640px and larger)
   }
 
   /* ---------END about 640PX----------- */
-
   /* ---------START AMOUNT project 640PX----------------------- */
   #hero-project .container {
     margin-top: 40px;
@@ -553,11 +549,11 @@ Large devices (1024px or larger)
   }
 
   #hero h2 {
-    font-size: 100px;
+    font-size: 90px;
   }
 
   #hero span {
-    padding: 40px 200px 0 0;
+    padding: 10px 3vw 0 0;
     line-height: 0.8;
   }
 
@@ -578,6 +574,16 @@ Large devices (1024px or larger)
     line-height: 1.8;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1200px) {
+  #hero span {
+    padding: 10px 13vw 0 0;
+    line-height: 0.8;
   }
 
   /* ---------START AMOUNT 1200PX----------- */
