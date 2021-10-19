@@ -2,10 +2,7 @@
 Primary - Black: #333333;
 Primary - Dark Gray: #808080;
 Primary - Gray: #CCCCCC;
-Secondary - Yellow: #F0FA81;
-Secondary - Lilac: #7e88c9
 */
-
 * {
   box-sizing: border-box;
 }
@@ -166,13 +163,13 @@ header {
   padding: 12px 0;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   text-decoration: none;
   font-weight: 500;
 }
@@ -203,16 +200,16 @@ nav > ul > li > a {
   background-color: transparent;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #333;
   background-color: transparent;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   text-decoration: underline;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #333;
   background-color: transparent;
 }
@@ -259,9 +256,7 @@ main {
 }
 
 /* --------------------END HERO-------------------- */
-
 /* -------END INTRO--------- */
-
 /* -------START WORKS-HOME --------- */
 #works-home {
   padding-top: 24px;
@@ -278,7 +273,6 @@ main {
 }
 
 /* -------END WORKS-HOME --------- */
-
 /* -------START FOOTER--------- */
 footer {
   padding: 1em 0;
@@ -312,7 +306,6 @@ footer p {
 }
 
 /* -------END FOOTER--------- */
-
 /* -------START WORKS--------- */
 #works .button-base {
   margin-top: 16px;
@@ -325,7 +318,6 @@ footer p {
 /* -------END WORKS--------- */
 
 /* --------AMOUNT START------ */
-
 #hero-project .container {
   margin-top: 40px;
 }
@@ -461,6 +453,12 @@ Medium devices (640px and larger)
   /* ---------START ABOUT 640PX----------- */
   .padding-left {
     padding-left: 32px;
+  }
+
+  #about img {
+    width: 60%;
+    display: block;
+    margin: auto;
   }
 
   #about h2 {
