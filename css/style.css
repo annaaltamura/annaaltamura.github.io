@@ -222,6 +222,7 @@ main {
   padding-top: 90px;
 }
 
+
 /* -----------------START HERO--------------------- */
 #hero {
   background-color: white;
@@ -230,9 +231,9 @@ main {
   width: 100%;
 }
 
-.img-hero {
-  background-image: url("img/hero_anna_altamura@2x.png");
-  background-size: cover;
+.col-img-hero {
+  background-image: url("/img/hero_anna_altamura@2x.png");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -245,18 +246,12 @@ main {
   font-weight: 400;
   font-size: 64px;
   font-family: 'Cormorant Upright', serif;
-  position: absolute;
-  z-index: 1;
-  display: block;
-  margin-top: 24px;
-  text-align: left;
   padding: 0 0 0 15px;
 }
 
 #hero span {
   text-align: right;
-  float: right;
-  padding: 3vh 30px 0 0;
+;
 }
 
 #hero .row {
@@ -424,20 +419,16 @@ Medium devices (640px and larger)
     font-weight: 400;
     font-size: 64px;
     font-family: 'Cormorant Upright', serif;
-    position: absolute;
-    z-index: 1;
-    display: block;
     margin-top: 24px;
-    text-align: left;
-    float: left;
-    padding: 0 0 0 15px;
+
   }
 
   #hero span {
     text-align: right;
-    float: right;
+    /*
     padding: 16px 30px 0 0;
     line-height: 0.8;
+    display: block;*/
   }
 
   /* ----------------------END HERO +640PX---------------------------- */
@@ -569,7 +560,7 @@ Large devices (1024px or larger)
   }
 
   #hero span {
-    padding: 10px 3vw 0 0;
+
     line-height: 0.8;
   }
 
@@ -602,8 +593,8 @@ Large devices (1024px or larger)
   }
 
   #hero span {
-    padding: 10px 13vw 0 0;
-    line-height: 0.8;
+  /*  padding: 10px 13vw 0 0;
+    line-height: 0.8;*/
   }
 
   /* ---------START AMOUNT 1200PX----------- */
@@ -614,4 +605,11 @@ Large devices (1024px or larger)
     text-align: center;
     width: 100%;
   }
+/* ---------END AMOUNT 1200PX----------- */
+/* ---------START aBout 1200PX----------- */
+#col-about {
+  padding-left: 24px;
+}
+
+
 }
