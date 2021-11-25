@@ -232,7 +232,7 @@ main {
 }
 
 .col-img-hero {
-  background-image: url("/img/hero_anna_altamura@2x.png");
+  background-image: url("../img/hero_anna_altamura@2x.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
